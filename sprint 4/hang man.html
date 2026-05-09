@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hang Man</title>
+</head>
+<body>
+    <H1>Welcome to HangMan</H1>
+    <script>
+       // creates array of words
+       var words = ["icode", "tiger", "computer", "robots, javascript", "html", "css", "python", "java", "hangman", "programming", "developer", "algorithm", "function", "variable", "object", "array", "string", "boolean", "loop", "condition", "syntax", "debugging", "compilation", "execution", "framework", "library", "database", "server", "client", "frontend", "backend", "api", "version", "control", "repository", "branch", "merge", "commit", "push", "pull", "clone", "fork", "issue", "bug", "feature", "release", "deployment", "testing", "automation", "integration", "continuous", "delivery", "agile", "scrum", "kanban", "sprint", "standup", "retrospective", "planning", "estimation", "velocity", "backlog", "userstory", "epic", "task", "subtask", "milestone", "roadmap", "stakeholder", "collaboration", "communication", "teamwork", "leadership", "mentorship", "learning", "growth", "innovation", "creativity", "problem-solving", "critical-thinking", "adaptability", "resilience", "empathy", "diversity", "inclusion", "culture", "values", "mission", "vision", "goals", "objectives", "strategy", "tactics", "execution", "performance", "metrics", "analytics", "data", "insights", "optimization", "scalability", "reliability", "security", "privacy", "compliance", "regulations", "standards", "bestpractices", "documentation", "knowledgebase", "community", "networking", "events", "conferences", "workshops", "webinars", "podcasts", "blogs", "forums", "socialmedia", "branding", "marketing", "sales", "customer", "support", "service", "satisfaction", "feedback", "improvement", "success", "achievement", "recognition", "reward", "motivation", "inspiration", "passion", "dedication", "commitment", "perseverance", "determination", "focus", "discipline", "time-management", "productivity", "efficiency", "effectiveness", "prioritization", "organization", "planning", "scheduling", "delegation", "collaboration", "communication", "negotiation", "conflict-resolution", "decision-making", "problem-solving", "critical-thinking", "creativity", "innovation", "adaptability", "flexibility", "resilience", "emotional-intelligence", "self-awareness", "self-regulation", "motivation", "empathy", "social-skills", "pneumonoultramicroscopicsilicovolcanoconiosis", "supercalifragilisticexpialidocious", "hippopotomonstrosesquipedaliophobia", "floccinaucinihilipilification", "antidisestablishmentarianism", "honorificabilitudinitatibus", "thyroparathyroidectomized", "dichlorodifluoromethane", "incomprehensibilities", "psychoneuroendocrinological", "radioimmunoelectrophoresis", "spectrophotofluorometrically", "uncharacteristically", "counterrevolutionaries", "electroencephalographically", "microspectrophotometries", "thyroparathyroidectomies", "ultracentrifugation", "ventriloquistically", "zoogeographical", "pseudopseudohypoparathyroidism", "hepaticocholangiogastrostomy", "immunoelectrophoretically", "psychopharmacological", "radioimmunoelectrophoretic", "spectrophotofluorometer", "thyroparathyroidectomize", "ultracentrifugations", "ventriloquistical", "zoogeographies",];
+       // pick a random word from the array
+       var word = words[Math.floor(Math.random() * words.length)];
+       // create the answer array
+       var answerArray = [];
+       // fill the answer array with underscores
+         for (var i = 0; i < word.length; i++) {
+              answerArray[i] = "_";
+         }
+         var remainingLetters = word.length;
+              while (remainingLetters > 0) {
+                 alert(answerArray.join(" "));
+                  var guess = prompt("Guess a letter, or click Cancel to stop playing.");
+                 if (guess === null) {
+                     break;
+                  } else if (guess.length !== 1) {
+                      alert("Please enter a single letter.");
+                  } else {
+                      for (var j = 0; j < word.length; j++) {
+                             if (word[j] === guess) {
+                                 answerArray[j] = guess;
+                                remainingLetters--;
+                              }
+                      }
+                  }
+              }
+                alert("Good job! The answer was " + word); 
+
+    </script>
+</body>
+</html>

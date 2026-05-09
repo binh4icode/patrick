@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson four</title>
+</head>
+<body>
+    <h1>Theres nothing here</h1>
+<div onmouseover="mOver(this)" onmouseout="mOut(this)">nothing here!</div>
+
+    <script>
+        function mOver(obj) {
+            obj.innerHTML = "no why did you do that now we will all die!"
+        }
+
+        function mOut(obj) {
+            obj.innerHTML = "nothing here!"
+        }
+    </script>
+
+    <p id="demo1" style="display:none">omg stop finding things! this is bad! this is bad!</p>
+    <button type = "button" onclick="document.getElementById('demo1').style.display='block'"> There's nothing else is in this white space</button>
+</body>
+</html>

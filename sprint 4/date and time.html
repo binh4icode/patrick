@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>date and time</title>
+</head>
+<body>
+    <!-- http://localhost:5500/date%20and%20time.html -->
+    <h1>my first java script</h1>
+    <button type="button" onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+    <p id="demo"></p>
+
+    <h2>what does javascript do?</h2>
+    <p>JavaScript can show hidden HTML content.</p>
+   <p id="demo1" style="display:none">This is a paragraph</p>
+    <button type = "button" onclick="document.getElementById('demo1').style.display='block'">Click to change the font size of the text</button>
+ 
+    <h2>Javascript HTML elements</h2>
+    <h2 onclick="this.innerHTML= 'you found the secret text'">click me</h2>
+
+    <div onmouseover="mOver(this)" onmouseout="mOut(this)" style="background-color:#cbc1e1;width:120px;height:20px;padding:40px">mouse over me</div>
+
+    <script>
+        function mOver(obj) {
+            obj.innerHTML = "secret Text"
+        }
+
+        function mOut(obj) {
+            obj.innerHTML = "mouse over me"
+        }
+    </script>
+    
+</body>
+</html>

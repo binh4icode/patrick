@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Number Guessing Game</title>
+
+<style>
+html {
+font-family: sans-serif;
+}
+
+body {
+width: 50%;
+max-width: 800px;
+min-width: 480px;
+margin: 0 auto;
+}
+</style>
+</head>
+
+<body>
+<h1>Guess The Number</h1>
+
+<div class="form">
+<label for="guessField">Enter a guess: </label>
+<input type = "text" id = "guessField" class = "guessField">
+<input type = "submit" value = "Submit guess"
+class = "guessSubmit" id = "submitguess">
+</div>
+
+<script>
+//1.  add the script tag that will tell the browser we are going to use Javascript.
+
+
+// 2. Create a variable named y and assign the following value:  Math.floor(Math.random() * 10 + 1)
+y = Math.floor(Math.random() * 100 + 1)
+// 3. create one more variable that will keep track of the number of guesses. Name it guess and set the value to 1.var guess = 1;
+var guess = 0;
+//4. add the following line of code:
+document.getElementById("submitguess").onclick = function(){
+// 5. Create one more variable that will hold the number guessed by user
+var x = document.getElementById("guessField").value;
+//6. Using conditional statements and the lines of code bellow create the logic to check if the user guessed correctly:
+if(x == y)
+{
+    alert("Wow good job now move on with your life. you got it in " + guess + " guesses thats way to many! ");
+}
+else if(x > y){
+    guess++;
+    alert("not Very good job It's smaller. so far you've guessed " + guess + " times");
+}
+else{
+    guess++;
+    alert("not Very good job It's bigger. so far you've guessed "  + guess + " times");
+}
+}
+
+//7. Close the script tag.
+</script>
+</body>
+</html>
