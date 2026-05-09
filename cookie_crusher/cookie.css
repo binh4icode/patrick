@@ -1,0 +1,41 @@
+body{
+    font-family: sans-serif;
+    background-image: url("images/oven.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#game-container{
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background-color: orange;
+    border: 8px solid brown;
+}
+p,h1 {
+    color: white;
+}
+
+.cookie{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    cursor: pointer;
+    animation: popIn 0.3s ease-out , spin 5s ease-out infinite;
+}
+
+@keyframes popIn{
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+  }
+
+.golden { filter: drop-shadow(0 0 10px gold); }
