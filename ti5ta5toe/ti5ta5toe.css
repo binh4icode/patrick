@@ -1,0 +1,106 @@
+h1 {
+    color: blueviolet;
+    margin: -5px;
+}
+
+.ui {
+    display:flex;
+    flex-direction:column ;
+    align-items: center;
+    justify-content: flex-start;
+}
+#main {
+    text-align: center;
+}
+.row {
+    display: flex;
+}
+
+.cell {
+    border: none;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.cell:active{
+    outline: none;
+}
+
+#b1 {
+    border-right: solid 10px red;
+    border-bottom:solid 10px orange;
+}
+
+#b2 {
+    border-left: solid 10px yellow;
+    border-right: solid 10px green;
+    border-bottom:solid 10px blue ;
+}
+
+#b3 {
+    border-left: solid 10px purple;
+    border-bottom:solid 10px lightcoral ;
+}
+
+#b4 {
+    border-top: solid 10px black;
+    border-right: solid 10px white;
+    border-bottom:solid 10px gray ;
+}
+#b5 {
+    border-top: solid 10px lightblue;
+    border-right: solid 10px lightgreen;
+    border-bottom:solid 10px lightseagreen;
+    border-left:solid 10px orangered;
+}
+
+#b6 {
+    border-top: solid 10px violet;
+    border-left: solid 10px indigo;
+    border-bottom:solid 10px indianred ;
+}
+
+#b7 {
+    border-top: solid 10px cyan;
+    border-right: solid 10px magenta;
+}
+
+#b8 {
+    border-top: solid 10px salmon;
+    border-right: solid 10px maroon;
+    border-left:solid 10px navy;
+}
+
+#b9 {
+    border-top: solid 10px lightpink;
+    border-left: solid 10px teal;
+}
+
+button {
+    width: 95px;
+    height: 40px;
+    margin-left:auto ;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-image: linear-gradient(90deg, orangered, lightseagreen);
+    font-size:20px ;
+    cursor: pointer;
+}
+
+input {
+    caret-color: transparent;
+}
+
+input:focus {
+     outline: none;
+}
+
+body {
+    background-image: linear-gradient(90deg, magenta, lightblue);
+}

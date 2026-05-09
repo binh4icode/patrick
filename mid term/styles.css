@@ -1,0 +1,101 @@
+body{
+    background: linear-gradient(135deg, blue, red, orange, green);
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: Arial,sans-serif;
+}
+
+.player{
+width: 50%;
+margin: auto;
+display: flex;
+flex-direction: column;
+padding: 50px;
+justify-content: center;
+align-items: center;
+border-radius: 30px;
+background: linear-gradient(135deg, blue, red, orange, green);
+border: 3px solid #282733;
+}
+
+
+.details{
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.slider_container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.text{
+    display: flex;
+     text-align: center;
+}
+
+p{
+    text-align: center;
+    padding: 20px;
+}
+
+.track-art{
+    width: 60%;
+    height: auto;
+    border-radius: 30px;
+}
+
+.prev-track{
+width: 30px;
+height: 30px;
+}
+
+.next-track{
+width: 30px;
+height: 30px;
+}
+.download{
+width: 30px;
+height: 30px;
+}
+
+.btn{
+    margin: 40px;
+    width: 40px;
+}
+
+.playpause-track{
+    width: 60px;
+    height: 60px;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.track-name{
+    font-size: 30px;
+}
+
+.track-desc, .now-playing{
+    font-size: 20px;
+
+}
+
+
+.seek-slider{
+    width: 80%;
+}
+
